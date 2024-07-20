@@ -12,3 +12,14 @@ function x(y){
 x(function y(){
     console.log('y')
 });
+
+//addEventListener with clouser
+
+function attachEventListener(){
+    count=0;
+    document.getElementById("clickMe").addEventListener("click",function xyz(){
+        console.log("Buttonclicked", ++ count)
+    })
+
+}
+attachEventListener();
