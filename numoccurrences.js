@@ -4,3 +4,13 @@ array.forEach(function(x){
     counts[x] = ((counts [x]||0)+ 1);
 })
 console.log(counts)
+
+// in case of string
+
+const str= "shivashankarareddy"
+
+const count={};
+for(const char of str){
+    count[char]= ((count[char]||0)+1);
+}
+console.log(count);
