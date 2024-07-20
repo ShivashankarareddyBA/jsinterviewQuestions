@@ -23,3 +23,20 @@ function attachEventListener(){
 
 }
 attachEventListener();
+
+
+//tricky interview questions
+
+console.log(2==2);
+console.log(2==2==2);
+console.log(2==2==2==0);
+// join below two arrys
+const num=[1,2,3];
+const fruits= ['🍌','🍍','🥭']; 
+
+//const finalarray=[num, fruits];//out put [ [ 1, 2, 3 ], [ '🍌', '🍍', '🥭' ] ] but need exactly elements within one array
+
+const finalarray=[...num, ...fruits]; //out put [  1, 2, 3 ,  '🍌', '🍍', '🥭' ] 
+console.log(finalarray);
+
+
