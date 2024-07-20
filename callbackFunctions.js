@@ -40,3 +40,9 @@ const finalarray=[...num, ...fruits]; //out put [  1, 2, 3 ,  '🍌', '🍍', '�
 console.log(finalarray);
 
 
+// now let see number and latters
+
+const num1 =[1,2,3,4];
+const letters= ['a','b','c','d'];
+const finalArray1 = [num1, letters];
+console.log(finalArray1);
