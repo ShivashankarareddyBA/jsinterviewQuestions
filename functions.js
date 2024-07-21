@@ -26,3 +26,12 @@ const c = function(parm1, parm2){
     console.log("parm2:", parm2);
 }
 c(1, 2);
+
+/////////
+function fetch(){
+    a =7;
+    console.log(a)
+    
+}
+fetch();
+let a;
