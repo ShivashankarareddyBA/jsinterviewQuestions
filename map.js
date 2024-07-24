@@ -24,3 +24,14 @@ function binary(x){
 }
 
 const output2= arr.map(binary);
+
+
+// filter
+const arr1 =[5,1,4,6,7];
+function isOdd(x){
+    return x % 2;
+}
+const output3 = arr1.filter(isOdd)
+
+
+console.log(output3);
