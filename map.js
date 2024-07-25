@@ -35,3 +35,24 @@ const output3 = arr1.filter(isOdd)
 
 
 console.log(output3);
+
+// even
+
+const arr2 =[5,1,4,6,7];
+function isEven(x){
+    return x % 2 === 0;
+}
+const output4 = arr2.filter(isEven)
+
+
+console.log(output4);
+
+const arr3 =[5,1,4,6,7];
+function graterthan(x){
+    return x > 2 ;
+}
+const output5 = arr3.filter(graterthan)
+
+
+console.log(output5);
+
