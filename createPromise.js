@@ -1,11 +1,17 @@
 const cart = ["shoes", "pants", "kurta"];
-
-const promise = createOrder(cart); // return order Id
+ createOrder(cart)// return order Id
 //console.log(promise) // output pending status
-promise.then(function (orderId) {
+.then(function (orderId) {
   console.log(orderId);
-  //proceedPayment(orderId)
-}).catch(function (err) {
+  return orderId;
+  //proceedPayment(orderId) promise chaning 
+}).then (function (orderId){
+   return proceedPayment(orderId);
+})
+.then(function (paymentInfo){
+    console.log(paymentInfo);
+})
+.catch(function (err) {
   console.error(err.message);
 });
 
@@ -20,6 +26,13 @@ function createOrder(cart) {
       resolve(orderId);
     }
   });
+}
+function proceedPayment(orderId){
+
+    return new Promise( function (res, rej){
+        res("Payment Successful")
+
+    });
 }
 
 function validateCart(cart) {
